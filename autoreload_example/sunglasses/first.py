@@ -11,10 +11,12 @@ import warnings
 
 
 def plot_stuff(x, y):
-    plt.scatter(x, y)
+    plt.scatter(x, y, c='r')
+    plt.xlabel("See this works?")
 
 
-def plot_stuff2(x, y):
+def plot_stuff2(x,
+                y):
     fig, ax = plt.subplots(figsize=(12, 8))
     ax.scatter(x, y, c='r')
     ax.set_xlabel("x-values")

@@ -8,6 +8,9 @@ from movie mo join rating ra on mo.mid = ra.mid) as b on b.stars = a.max_rating
 and b.director = a.director
 where a.director is not null;
 
+
+
+
 -- CMD + K, F
 SELECT DISTINCT a.director,
                 b.title,
